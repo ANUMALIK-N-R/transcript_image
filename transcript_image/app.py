@@ -29,7 +29,7 @@ if uploaded_file:
     draw = ImageDraw.Draw(bg_img)
 
     # Use a default font path (or upload your custom font in Colab)
-    font_path = "/usr/share/fonts/truetype/liberation/LiberationMono-Bold.ttf"  # Use built-in font for Colab
+    font_path = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"  # Use built-in font for Colab
     base_font_size = 7
     font_levels = [
         {"scale": 3, "threshold": 0.55},
