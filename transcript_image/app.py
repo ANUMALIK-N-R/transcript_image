@@ -5,14 +5,14 @@ import numpy as np
 import tempfile
 
 # Add title and description
-st.title("🎁 A Special Gift for You!")
-st.markdown("### Hey Murshitha Fathima 👋\nI made this for you — a personalized typographic art generator! Upload a photo and see your name come to life in art.")
+st.title("TRANSCRIPT IMAGE GENERATOR")
+st.markdown("### Hey this is a personalized typographic art generator! Upload a photo and see your name come to life in art.")
 
 # Add file uploader for image input
 uploaded_file = st.file_uploader("Upload an Image", type=["jpg", "jpeg", "png"])
 
 # Add custom text input box
-text = st.text_input("Enter your name or custom text ✨", value="Pathu")
+text = st.text_input("Enter your name or custom text ✨", value="Your name")
 st.markdown("🌈 Upload a photo below and watch the magic happen! 🖼️💫")
 if uploaded_file:
     image = Image.open(uploaded_file).convert("L")
@@ -92,4 +92,4 @@ if uploaded_file:
         bg_img.save(tmp.name)
         st.download_button("Download Image", data=open(tmp.name, "rb"), file_name="typographic_output.png", mime="image/png")
 st.markdown("---")
-st.markdown("💌 A smallgift by your friend.\n\n_This app is a little piece of digital art — just like you!_ 💕")
+st.markdown("This app is a little piece of digital art — just like you!_ 💕")
